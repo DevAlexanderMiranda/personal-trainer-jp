@@ -138,11 +138,14 @@ nav {
 
 .hero-content p,
 .hero-content span {
-  font-size: 1rem;
+  font-size: 16px !important;
   color: var(--light-text);
   margin-bottom: 2rem;
   text-align: justify;
   display: block;
+  transform: scale(1) !important;
+  zoom: 1 !important;
+  -webkit-text-size-adjust: 100% !important;
 }
 
 .hero-image img {
@@ -548,9 +551,12 @@ nav {
 .about-content span {
   margin-bottom: 2rem;
   color: var(--light-text);
-  font-size: 0.9rem;
+  font-size: 15px !important;
   text-align: justify;
   display: block;
+  transform: scale(1) !important;
+  zoom: 1 !important;
+  -webkit-text-size-adjust: 100% !important;
 }
 
 .about-image {
@@ -735,6 +741,16 @@ nav {
   .contact-item {
     padding: 1.25rem;
   }
+
+  .hero-content p,
+  .hero-content span {
+    font-size: 15px;
+  }
+
+  .about-content p,
+  .about-content span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -747,6 +763,11 @@ nav {
 
   .contact-item i {
     margin-bottom: 0.5rem;
+  }
+
+  .hero-content p,
+  .hero-content span {
+    font-size: 14px;
   }
 }
 
@@ -1064,11 +1085,11 @@ footer::before {
 
   .hero-content p,
   .hero-content span {
-    font-size: 0.95rem !important;
+    font-size: 15px;
   }
 
   h2 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   #about {
@@ -1087,7 +1108,7 @@ footer::before {
 
   .about-content p,
   .about-content span {
-    font-size: 0.9rem !important;
+    font-size: 14px;
   }
 
   .about-image {
@@ -1202,11 +1223,11 @@ footer::before {
 
   .hero-content p,
   .hero-content span {
-    font-size: 0.95rem !important;
+    font-size: 14px;
   }
 
   h2 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .feature-card {
@@ -1864,39 +1885,38 @@ footer::before {
   }
 }
 
-/* Nova regra única para controle de tamanho de fonte em diferentes dispositivos */
-@media screen and (min-width: 1201px) {
-  .hero-content p,
-  .hero-content span,
-  .about-content p,
-  .about-content span {
-    font-size: 1rem;
-  }
+/* Adicionar regra para todos os elementos texto para evitar ajuste automático */
+html {
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
 }
 
-@media screen and (max-width: 1200px) {
-  .hero-content p,
-  .hero-content span,
-  .about-content p,
-  .about-content span {
-    font-size: 0.95rem;
-  }
+.hero-description,
+.about-description {
+  font-size: 16px !important;
+  display: inline-block !important;
+  width: 100% !important;
+  text-align: justify !important;
+  line-height: 1.5 !important;
+  color: var(--light-text) !important;
+  margin-bottom: 2rem !important;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  transform: none !important;
+  max-height: none !important;
+  max-width: none !important;
 }
 
-@media only screen and (max-device-width: 812px) {
-  .hero-content p,
-  .hero-content span,
-  .about-content p,
-  .about-content span {
-    font-size: 0.85rem;
-  }
+.about-description {
+  font-size: 15px !important;
 }
 
-@media only screen and (max-device-width: 812px) and (orientation: landscape) {
-  .hero-content p,
-  .hero-content span,
-  .about-content p,
-  .about-content span {
-    font-size: 0.8rem;
+@media (max-width: 768px) {
+  .hero-description {
+    font-size: 15px !important;
+  }
+
+  .about-description {
+    font-size: 14px !important;
   }
 }
