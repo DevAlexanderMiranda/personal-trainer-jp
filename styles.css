@@ -74,6 +74,7 @@ nav {
   text-transform: uppercase;
   font-size: clamp(0.8rem, 1vw, 0.9rem);
   letter-spacing: 0.5px;
+  border-bottom: none !important;
 }
 
 .nav-links a:hover {
@@ -1918,5 +1919,32 @@ html {
 
   .about-description {
     font-size: 14px !important;
+  }
+}
+
+/* Manter a borda apenas no menu mobile */
+@media (max-width: 768px) {
+  .nav-links a {
+    border-bottom: 1px solid var(--light-gray);
+  }
+}
+
+/* Adicionar regras mais específicas para remover a linha cinza em qualquer situação */
+@media (min-width: 769px) {
+  .nav-links a {
+    border-bottom: none !important;
+    border: none !important;
+    padding-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Estilo específico para navegação desktop em dispositivos móveis */
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (min-width: 769px) {
+  .nav-links a {
+    border-bottom: none !important;
+    border: none !important;
+    padding-bottom: 0 !important;
+    box-shadow: none !important;
   }
 }
