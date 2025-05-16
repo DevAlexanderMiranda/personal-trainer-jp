@@ -137,7 +137,7 @@ nav {
 }
 
 .hero-content p {
-  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
   color: var(--light-text);
   margin-bottom: 2rem;
   text-align: justify;
@@ -545,7 +545,7 @@ nav {
 .about-content p {
   margin-bottom: 2rem;
   color: var(--light-text);
-  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-size: clamp(0.85rem, 0.9vw, 0.95rem);
   text-align: justify;
 }
 
@@ -561,6 +561,9 @@ nav {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease;
+  width: clamp(250px, 100%, 500px);
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .about-image:hover img {

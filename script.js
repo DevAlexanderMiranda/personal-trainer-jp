@@ -629,10 +629,12 @@ aboutBtn.addEventListener("click", function () {
 });
 
 // Fechar o modal quando clicar no X
-aboutCloseBtn.addEventListener("click", function () {
-  document.body.style.overflow = ""; // Restaura rolagem
-  aboutModal.classList.remove("show");
-});
+document
+  .querySelector("#about-modal .modal-close")
+  .addEventListener("click", function () {
+    document.body.style.overflow = ""; // Restaura rolagem
+    aboutModal.classList.remove("show");
+  });
 
 // Fechar o modal quando clicar fora do conteúdo
 window.addEventListener("click", function (event) {
