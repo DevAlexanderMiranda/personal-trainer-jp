@@ -136,11 +136,13 @@ nav {
   font-weight: 800;
 }
 
-.hero-content p {
+.hero-content p,
+.hero-content span {
   font-size: clamp(0.9rem, 1vw, 1.1rem);
   color: var(--light-text);
   margin-bottom: 2rem;
   text-align: justify;
+  display: block;
 }
 
 .hero-image img {
@@ -542,11 +544,13 @@ nav {
   font-weight: 800;
 }
 
-.about-content p {
+.about-content p,
+.about-content span {
   margin-bottom: 2rem;
   color: var(--light-text);
   font-size: clamp(0.85rem, 0.9vw, 0.95rem);
   text-align: justify;
+  display: block;
 }
 
 .about-image {
@@ -1176,7 +1180,8 @@ footer::before {
     font-size: 1.8rem;
   }
 
-  .hero-content p {
+  .hero-content p,
+  .hero-content span {
     font-size: 1rem;
   }
 
