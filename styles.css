@@ -1065,7 +1065,6 @@ footer::before {
   .hero-content p,
   .hero-content span {
     font-size: 0.95rem !important;
-    max-font-size: 0.95rem !important;
   }
 
   h2 {
@@ -1089,7 +1088,6 @@ footer::before {
   .about-content p,
   .about-content span {
     font-size: 0.9rem !important;
-    max-font-size: 0.9rem !important;
   }
 
   .about-image {
@@ -1205,7 +1203,6 @@ footer::before {
   .hero-content p,
   .hero-content span {
     font-size: 0.95rem !important;
-    max-font-size: 0.95rem !important;
   }
 
   h2 {
